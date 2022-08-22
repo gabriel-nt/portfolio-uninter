@@ -1,0 +1,331 @@
+/* Estilizações
+  Algumas classes já existiam no bootstrap, 
+  porém foi feito o "override" das mesmas
+*/
+
+/* Estilização da tag body */
+body {
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  color: #353a58;
+  outline: none;
+  font: 600 18px Nunito, sans-serif;
+  background-color: #fafafa;
+  overflow-x: hidden;
+}
+
+/* Estilização da tag p e da classe .paragraph */
+p,
+.paragraph {
+  font-weight: 400;
+  color: #353a58;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Estilização da fonte para classes  */
+.p-lg,
+.paragraph-lg {
+  font-size: 22px;
+}
+
+/* Estilização dos botões */
+.btn {
+  font-size: 22px;
+  text-transform: capitalize;
+  padding: 16px 44px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 0;
+  position: relative;
+  z-index: 1;
+  transition: 0.2s ease;
+}
+
+/* Estilização para o botão, quando houver foco */
+.btn:focus {
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* Estilização para o botão, quando já estiver clicado */
+.btn:active {
+  box-shadow: none;
+}
+
+/* Estilo de fonte e espaçamento */
+.btn-sm {
+  font-size: 15px;
+  padding: 10px 30px;
+}
+
+/* Estilo de fonte e espaçamento */
+.btn-xs {
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+/* Estilo de cor da fonte e cor de fundo */
+.btn-primary {
+  background: #ff8465;
+  color: #fff;
+}
+
+/* Inicio do override da estilização do botão primário */
+.btn-primary:active {
+  background: #fa6f4d !important;
+}
+
+.btn-primary:hover {
+  background: #fa6f4d;
+}
+
+.btn-primary.focus,
+.btn-primary.active {
+  background: #fa6f4d !important;
+  box-shadow: none !important;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #ff8465;
+  font-weight: bold;
+}
+
+.btn-transparent:active,
+.btn-transparent:hover {
+  color: #ff8465;
+}
+/* Fim do override da estilização do botão primário */
+
+/* Estilização das listas */
+ol,
+ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+/* Estilização da tag de imagem */
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+/* Estilização da tag de âncora */
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+/* Estilização da tag de âncora, botão e select */
+a,
+button,
+select {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Estilização do focus da tag de âncora, botão e select */
+a:focus,
+button:focus,
+select:focus {
+  outline: 0;
+}
+
+/* Estilização do hover da tag de âncora*/
+a.text-dark:hover {
+  color: #ff8465 !important;
+}
+
+/* Estilização do hover da tag de âncora*/
+a:hover {
+  color: #ff8465;
+}
+
+.section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.section-title {
+  margin-bottom: 80px;
+}
+
+/* Inicio de outros overrides de cores das fontes e cores de fundo */
+.bg-primary {
+  background: #ff8465 !important;
+}
+
+.bg-gray {
+  background: #ecedf1 !important;
+}
+
+.text-primary {
+  color: #ff8465 !important;
+}
+
+.text-color {
+  color: #7d8298;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.text-light {
+  color: #353a58 !important;
+}
+
+.bg-dark {
+  background-color: #ecedf1 !important;
+}
+/* Fim dos overrides de cores das fontes e cores de fundo */
+
+/* Estilização dos ícones */
+.icon {
+  font-size: 45px;
+}
+
+/* Estilização dos ícones */
+.icon-bg {
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
+/* Estilização dos ícones */
+.icon-light {
+  color: #c8d5ef;
+}
+
+/* Estilização do formulário de contato */
+.form-control {
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #c7c7c7;
+  height: 60px;
+}
+
+/* Estilização do formulário de contato */
+.form-control:focus {
+  border-color: #ff8465;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* Estilização do campo de mensagem do formulário de contato */
+textarea.form-control {
+  height: 120px;
+}
+
+/* Estilo dos cards */
+.card {
+  border: 0;
+}
+
+/* Estilo dos cards */
+.card-header {
+  border: 0;
+}
+
+/* Estilo dos cards */
+.card-footer {
+  border: 0;
+}
+
+/* Inicio de outras estilizações */
+.navigation {
+  padding: 40px 130px;
+  transition: 0.3s ease;
+}
+
+.navigation.nav-bg {
+  background-color: #ff8465;
+  padding: 15px 100px;
+}
+
+@media (max-width: 991px) {
+  .navigation.nav-bg {
+    padding: 15px 20px;
+  }
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    padding: 20px;
+    background: #ff8465;
+  }
+}
+
+.navbar .nav-item .nav-link {
+  text-transform: uppercase;
+  padding: 15px;
+}
+.navbar .nav-item.active {
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.hero-area {
+  padding: 300px 0 200px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .hero-area {
+    padding: 250px 0 150px;
+    overflow: hidden;
+  }
+}
+.hero-area h1 {
+  position: relative;
+  z-index: 2;
+}
+
+.shadow-down {
+  position: relative;
+}
+
+.shadow-down::before {
+  position: absolute;
+  content: '';
+  box-shadow: 0px 0px 80.75px 14.25px rgba(224, 241, 255, 0.34);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.card-lg {
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .card-lg {
+    flex-direction: column;
+  }
+}
+
+.content * {
+  margin-bottom: 20px;
+}
+
+.content strong {
+  font-size: 22px;
+  font-weight: normal;
+  color: #000;
+  display: inherit;
+  line-height: 1.5;
+}
+/* Fim da sessão de outras estilizações */

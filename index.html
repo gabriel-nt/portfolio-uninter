@@ -1,0 +1,457 @@
+<!-- Declaração do doctype -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Meta tag de codificação dos caractéres-->
+    <meta charset="utf-8" />
+    <!-- Título da página -->
+    <title>Portfólio - Gabriel Nunes Teixeira</title>
+
+    <!-- Outras meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
+    <!-- Importação das estilizações do bootstrap e da font -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importação das estilizações -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Cabeçalho da aplicação -->
+    <header class="navigation fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- Logomarca do site -->
+        <a class="navbar-brand font-tertiary h4" href="index.html"
+          >Gabriel Teixeira</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu do site -->
+        <div
+          id="navbarToggleExternalContent"
+          class="collapse navbar-collapse text-center justify-content-end"
+        >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <!-- Link para a página inicial na sessão Sobre mim-->
+              <a class="nav-link" href="index.html#about">Sobre Mim</a>
+            </li>
+            <li class="nav-item active">
+              <!-- Link para a página inicial na sessão Experiência-->
+              <a class="nav-link" href="index.html#experience">Experiência</a>
+            </li>
+            <li class="nav-item active">
+              <!-- Link para a página inicial na sessão Educação-->
+              <a class="nav-link" href="index.html#education">Educação</a>
+            </li>
+            <li class="nav-item">
+              <!-- Link para a página inicial na sessão Portfólio-->
+              <a class="nav-link" href="index.html#portfolio">Portfólio</a>
+            </li>
+            <li class="nav-item">
+              <!-- Link para de Contato-->
+              <a class="nav-link" href="contact.html">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sessão inicial do site -->
+    <section class="hero-area bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-11 mx-auto">
+            <!-- Título de boas vindas -->
+            <h1 class="text-white font-tertiary">
+              Olá! Eu sou<br />
+              Gabriel Teixeira<br />
+              Desenvolvedor Fullstack
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de sobre mim -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center mb-5">
+            <!--Tag de heading centralizada na página -->
+            <h2 class="mt-4">Sobre mim</h2>
+            <!-- Imagem do banner -->
+            <img src="./images/banner.png" class="img-fluid mt-3" />
+          </div>
+          <div class="col-lg-10 mx-auto text-center">
+            <!-- Parágrafos com adição de classes adicionais -->
+            <p class="paragraph-lg text-dark">
+              Entrei no mundo do desenvolvimento através do curso técnico de
+              informática, e desde então, respiro e vivo programação,
+              desenvolvendo side projects e trabalhando na área.
+            </p>
+            <p class="paragraph-lg text-dark">
+              Após concluir o curso técnico, iniciei o bootcampo GoStack da
+              Rockeaseat. Conclui o mesmo em 2 meses e estou me preparando para
+              2020 inicar a faculdade de Sistemas da Informação.
+            </p>
+            <p class="paragraph-lg text-dark">
+              Como hobbys, curto jogar jogos de FPS, Futebol e Mundo Aberto,
+              assistir filmes e séries do universo Marvel, além de estudar novas
+              tecnologias!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de minhas habilidades separados em cards -->
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!--Tag de heading centralizada na página -->
+            <h2 class="section-title">Habilidades</h2>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/html.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">HTML (90%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/css.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">CSS (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/sass.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">CSS (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/js.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">CSS (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/ts.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">CSS (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 112px" class="pt-4">
+                <img src="./images/skils/react.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">React (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/react-native.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">React Native (60%)</h4>
+              </div>
+            </div>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 6/12 na visão mobile -->
+          <div class="col-lg-3 col-sm-6 mb-4">
+            <!-- Card com sombras e conteúdo centralizado -->
+            <div
+              class="card shadow d-flex justify-content-center align-items-center"
+            >
+              <div style="max-width: 100px" class="pt-4">
+                <img src="./images/skils/node.png" class="img-fluid" />
+              </div>
+              <!-- Rotápe do card -->
+              <div class="card-footer bg-white pt-4">
+                <h4 class="card-title">NodeJS (60%)</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de minhas experiências-->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-lg-12 text-center">
+            <!--Tag de heading centralizada na página -->
+            <h2 class="section-title mt-5">Experiência</h2>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 4/12 na visão mobile -->
+          <div class="col-lg-3 col-md-4 text-center">
+            <!-- Imagem do ícone que está localizada na pasta images -->
+            <img src="images/experience/icon-1.png" alt="icon" />
+            <p class="mb-0">Julho 2019 - Novembro 2020</p>
+            <h4>Desenvolvedor Jr</h4>
+            <h6 class="text-light">Hoffman Studio</h6>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 4/12 na visão mobile -->
+          <div class="col-lg-3 col-md-4 text-center">
+            <!-- Imagem do ícone que está localizada na pasta images -->
+            <img src="images/experience/icon-2.png" alt="icon" />
+            <p class="mb-0">Novembro 2020 - Março 2022</p>
+            <h4>Desenvolvedor Jr</h4>
+            <h6 class="text-light">Compass UOL</h6>
+          </div>
+          <!-- Card que ocupará 3/12 de uma linha  na visão de destok e 4/12 na visão mobile -->
+          <div class="col-lg-3 col-md-4 text-center">
+            <!-- Imagem do ícone que está localizada na pasta iamges -->
+            <img src="images/experience/icon-3.png" alt="icon" />
+            <p class="mb-0">Março 2022 - Presente</p>
+            <h4>Desenvolvedor Pl</h4>
+            <h6 class="text-light">Americanas S.A</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de minha educação separados em duas colunas-->
+    <section class="section position-relative" id="education">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <!--Tag de heading centralizada na página -->
+            <h2 class="section-title">Educação</h2>
+          </div>
+          <!-- Conteúdo que ocupará metade de uma linha do espaço-->
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div>
+                <p class="text-dark mb-1">2018</p>
+                <h4>Ensino Médio</h4>
+                <p class="mb-0 text-light">Escola Felipe Marx - Taquara/RS</p>
+              </div>
+            </div>
+          </div>
+          <!-- Conteúdo que ocupará metade de uma linha do espaço-->
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div>
+                <p class="text-dark mb-1">2018 - 2020</p>
+                <h4>Técnico em Informática</h4>
+                <p class="mb-0 text-light">
+                  Escola Monteiro Lobato - Taquara/RS
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Conteúdo que ocupará metade de uma linha do espaço-->
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div>
+                <p class="text-dark mb-1">2020 - 2020</p>
+                <h4>Bootcamp GoStack 13</h4>
+                <p class="mb-0 text-light">Rocketseat - Rio do Sul/SC</p>
+              </div>
+            </div>
+          </div>
+          <!-- Conteúdo que ocupará metade de uma linha do espaço-->
+          <div class="col-lg-6 col-md-6 mb-80">
+            <div class="d-flex">
+              <div>
+                <p class="text-dark mb-1">2021 - Presente</p>
+                <h4>Análise e Desenvolvimento de Sistemas</h4>
+                <p class="mb-0 text-light">Uninter</p>
+              </div>
+            </div>
+          </div>
+          <!-- Conteúdo que ocupará uma linha do espaço-->
+          <div class="col-lg-12 col-md-12 mb-80">
+            <div class="d-flex">
+              <div>
+                <!--Tag de heading centralizada na esquerda da página -->
+                <h4>Idiomas</h4>
+                <p class="mb-0 text-light">Português - Inglês</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sessão de meu portfólio-->
+    <section class="section position-relative" id="portfolio">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <!--Tag de heading (titulo) centralizada na página -->
+            <h2 class="section-title mb-3">Portfólio</h2>
+            <!--Tag de heading (subtitulo) centralizada na página -->
+            <h5>Segue alguns websites realizados por mim:</h5>
+          </div>
+          <div class="col-lg-12">
+            <!-- Lista de links -->
+            <h5>
+              <a target="_blank" href="https://pokedex-ochre-five.vercel.app/"
+                >Pokédex</a
+              >
+            </h5>
+            <h5>
+              <a
+                target="_blank"
+                href="https://alurakut-n1hqvtjmo-gabriel-nt.vercel.app/login"
+                >AluraKut</a
+              >
+            </h5>
+            <h5>
+              <a
+                target="_blank"
+                href="https://move-it-beta-three.vercel.app/home"
+                >MoveIT</a
+              >
+            </h5>
+            <h5>
+              <a
+                target="_blank"
+                href="https://spider-man-3g4u4k45q-gabriel-nt.vercel.app/"
+                >Spider-man Miles Morales</a
+              >
+            </h5>
+            <h5>
+              <a
+                target="_blank"
+                href="https://quiz-everybody-hates-chris-ew8mroaal.vercel.app/"
+                >Alura Quiz</a
+              >
+            </h5>
+            <h5>
+              Acesse meu github para ver mais alguns de meus projetos e estudos:
+              <a href="https://github.com/gabriel-nt?tab=repositories"
+                >GitHub</a
+              >
+            </h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé do site -->
+    <footer class="bg-dark footer-section">
+      <div class="section">
+        <!-- Sessão separada em três colunas na visão desktop e em três linhas na visão mobile -->
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h5 class="text-light">Email</h5>
+              <h5 class="text-color">gabriel.nteixeira@gmail.com</h5>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Telefone</h5>
+              <h5 class="text-color">51 99999-9999</h5>
+            </div>
+            <div class="col-md-4">
+              <h5 class="text-light">Endereço</h5>
+              <h5 class="text-color">Taquara, Rio Grande do Sul, BR</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Espaço destinado para declaração do copyright do site -->
+      <div class="border-top text-center border-dark py-5">
+        <p class="mb-0 text-light">Copyright &copy; 2022</p>
+      </div>
+    </footer>
+
+    <!-- Importação dos arquivos de javascript próprios e de terceiros -->
+    <script src="js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
